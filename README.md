@@ -271,7 +271,7 @@ oc exec -n feast deploy/feast-example -itc online -- feast apply
 
 You should see output similar to the following:
 
-```
+```{: .optional-language-as-class .no-copy}
  oc exec -n feast deploy/feast-example -itc online -- feast apply
 No project found in the repository. Using project name credit_scoring_local defined in feature_store.yaml
 Applying changes for project credit_scoring_local
@@ -291,7 +291,7 @@ oc exec -n feast deploy/feast-example -itc online -- bash -c 'feast materialize 
 
 You should see output similar to the following:
 
-```
+```{: .optional-language-as-class .no-copy}
 % oc exec -n feast deploy/feast-example -itc online -- bash -c 'feast materialize 1990-01-01T00:00:00 $(date -u +"%Y-%m-%dT%H:%M:%S")'
 Materializing 2 feature views from 1990-01-01 00:00:00+00:00 to 2025-03-14 16:23:32+00:00 into the redis online store.
 
